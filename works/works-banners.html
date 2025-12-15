@@ -24,24 +24,26 @@
   <meta name="twitter:image" content="https://example.com/ogp.jpg">
 
   <!-- ファビコン / テーマカラー -->
-  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <link rel="shortcut icon" href="/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
   <meta name="theme-color" content="#ffffff">
 
   <!-- CSS / JS -->
-  <link rel="stylesheet" href="/css/sanitize.css">
-  <link rel="stylesheet" href="/css/style.css">
-  <script src="/js/main.js" defer></script>
+  <!-- NOTE:GitHub Pagesでは /qureanote/本番（独自ドメイン）では / に変更する-->
+  <base href="/qureanote/">
+  <link rel="stylesheet" href="css/sanitize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
 </head>
 
 <body>
     <header class="site-header">
       <div class="container">
         <p class="logo">
-          <a href="/index.html" aria-label="QureaNote トップページへ戻る">QureaNote</a>
+          <a href="index.html" aria-label="QureaNote トップページへ戻る">QureaNote</a>
         </p>
 
         <!-- SP用 ハンバーガーボタン -->
@@ -56,10 +58,10 @@
 
         <nav class="global-nav" id="global-nav">
           <ul>
-            <li><a href="../index.html"><span>ホーム</span></a></li>
-            <li><a href="../blog.html"><span>学習日記</span></a></li>
-            <li><a href="../works.html"><span>制作実績</span></a></li>
-            <li><a href="../contact.html"><span>お問い合わせ</span></a></li>
+            <li><a href="index.html"><span>ホーム</span></a></li>
+            <li><a href="blog.html"><span>学習日記</span></a></li>
+            <li><a href="works.html"><span>制作実績</span></a></li>
+            <li><a href="contact.html"><span>お問い合わせ</span></a></li>
           </ul>
         </nav>
       </div>
@@ -80,10 +82,10 @@
           <div class="banners-size1080">
             <div class="parent-box">
               <div class="child-box">
-                <img src="/imgs/banners/portfolio_banner_01.png" alt="portfolio_banner_01.png">
+                <img src="imgs/banners/portfolio_banner_01.png" alt="portfolio_banner_01.png">
               </div>
               <div class="child-box">
-                <img src="/imgs/banners/portfolio_banner_02.png" alt="portfolio_banner_02.png">
+                <img src="imgs/banners/portfolio_banner_02.png" alt="portfolio_banner_02.png">
               </div>
             </div>
           </div>
@@ -95,14 +97,15 @@
     <footer class="footer">
       <nav class="footer-nav">
         <ul>
-          <li><a href="../index.html">ホーム</a></li>
-          <li><a href="../blog.html">学習日記</a></li>
-          <li><a href="../works.html">制作実績</a></li>
-          <li><a href="../contact.html">お問い合わせ</a></li>
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="blog.html">学習日記</a></li>
+          <li><a href="works.html">制作実績</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
         </ul>
       </nav>
 
       <p class="footer-copy">© 2025 QureaNote</p>
     </footer>
 </body>
+
 </html>
