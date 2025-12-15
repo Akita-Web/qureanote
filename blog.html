@@ -6,9 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- タイトル・ディスクリプション -->
-  <title>Web制作の学習日記｜QureaNote</title>
-    <meta name="apple-mobile-web-app-title" content="QureaNote">
-  <meta name="description" content="QureaNoteの学習日記一覧です。Web制作やデザインの学習記録をまとめています。制作の過程、気づき、改善点を整理して発信しています。">
+  <title>Web制作と学習記録｜QureaNote</title>
+  <meta name="apple-mobile-web-app-title" content="QureaNote">
+  <meta name="description" content="QureaNoteは、Web制作を中心に学びながら得た知識や試行錯誤の過程を記録していく個人サイトです。学習の積み上げと実践の記録を発信しています。">
   <meta name="robots" content="index, follow">
 
   <!-- OGP / SNS -->
@@ -24,24 +24,26 @@
   <meta name="twitter:image" content="https://example.com/ogp.jpg">
 
   <!-- ファビコン / テーマカラー -->
-  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <link rel="shortcut icon" href="/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
   <meta name="theme-color" content="#ffffff">
 
   <!-- CSS / JS -->
-  <link rel="stylesheet" href="/css/sanitize.css">
-  <link rel="stylesheet" href="/css/style.css">
-  <script src="/js/main.js" defer></script>
+  <!-- NOTE:GitHub Pagesでは /qureanote/本番（独自ドメイン）では / に変更する-->
+  <base href="/qureanote/">
+  <link rel="stylesheet" href="css/sanitize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
 </head>
 
 <body>
     <header class="site-header">
       <div class="container">
         <p class="logo">
-          <a href="/index.html" aria-label="QureaNote トップページへ戻る">QureaNote</a>
+          <a href="index.html" aria-label="QureaNote トップページへ戻る">QureaNote</a>
         </p>
 
         <!-- SP用 ハンバーガーボタン -->
@@ -100,4 +102,5 @@
       <p class="footer-copy">© 2025 QureaNote</p>
     </footer>
 </body>
+
 </html>
