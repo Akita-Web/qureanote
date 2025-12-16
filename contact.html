@@ -24,112 +24,102 @@
   <meta name="twitter:image" content="https://example.com/ogp.jpg">
 
   <!-- ファビコン / テーマカラー -->
-  <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
-  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-  <link rel="shortcut icon" href="favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-  <link rel="manifest" href="site.webmanifest" />
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
   <meta name="theme-color" content="#ffffff">
 
   <!-- CSS / JS -->
-  <!-- NOTE:GitHub Pagesでは /qureanote/本番（独自ドメイン）では / に変更する-->
-  <base href="/qureanote/">
-  <link rel="stylesheet" href="css/sanitize.css">
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/main.js" defer></script>
+  <link rel="stylesheet" href="/css/sanitize.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/main.js" defer></script>
 </head>
 
 <body>
-    <header class="site-header">
-      <div class="container">
-        <p class="logo">
-          <a href="index.html" aria-label="QureaNote トップページへ戻る">QureaNote</a>
-        </p>
+  <header class="site-header">
+    <div class="container">
+      <p class="logo">
+        <a href="/index.html" aria-label="QureaNote トップページへ戻る">QureaNote</a>
+      </p>
 
-        <!-- SP用 ハンバーガーボタン -->
-         <button class="nav-toggle" type="button" aria-controls="global-nav" aria-expanded="false">
-          <!-- aria-controls="global-nav" このボタンはどのメニューを開閉するかを示すお約束 -->
-          <!-- aria-expanded="false" このボタンに対応するメニューは今閉じている状態であることをスクリーンリーダーに伝える-->
-          <span class="nav-toggle-bar"></span>
-          <span class="nav-toggle-bar"></span>
-          <span class="nav-toggle-bar"></span>
-          <span class="sr-only">メニューを開く</span>
-         </button>
+      <!-- SP用 ハンバーガーボタン -->
+      <button class="nav-toggle" type="button" aria-controls="global-nav" aria-expanded="false">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="sr-only">メニューを開く</span>
+      </button>
 
-        <nav class="global-nav" id="global-nav">
-          <ul>
-            <li><a href="index.html"><span>ホーム</span></a></li>
-            <li><a href="blog.html"><span>学習日記</span></a></li>
-            <li><a href="works.html"><span>制作実績</span></a></li>
-            <li><a href="contact.html"><span>お問い合わせ</span></a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-
-    <main>
-      <section class="hero">
-        <div class="hero-inner">
-          <h1 class="hero-title">
-              お問い合わせ
-          </h1>
-        </div>
-      </section>
-
-      <!-- お問い合わせフォーム本体 -->
-      <section class="contact">
-        <div class="contact-inner">
-          <p class="contact-lead">
-            お仕事のご相談やご質問などございましたら、下記フォームよりお気軽にご連絡ください。<br>
-            ※内容によっては返信いたしかねる場合があります。<br>
-            ※返信までには数日かかる場合があります。
-          </p>
-
-          <!-- action はあとで Formspree のURlに差し替え -->
-           <form id="contactForm" action="https://formspree.io/f/meoyvekq" method="post" class="contact-form">
-
-            <div class="form-field">
-              <label for="name">お名前</label>
-              <input type="text" id="name" name="name" required>
-            </div>
-
-            <div class="form-field">
-              <label for="email">メールアドレス</label>
-              <input type="email" id="email" name="email" required>
-            </div>
-
-            <div class="form-field">
-              <label for="message">お問い合わせ内容</label>
-              <textarea name="message" id="message" rows="6" required></textarea>
-            </div>
-
-            <div class="contact-submit-wrap">
-              <button type="submit" class="contact-submit">送信する</button>
-            </div>
-
-            <p class="contact-note">
-              ご入力いただいた内容は、お問い合わせへの回答のみに使用し、第三者へ提供することはありません。
-            </p>
-            
-           </form>
-        </div>
-      </section>
-
-    </main>
-
-    <footer class="footer">
-      <nav class="footer-nav">
+      <nav class="global-nav" id="global-nav">
         <ul>
-          <li><a href="index.html">ホーム</a></li>
-          <li><a href="blog.html">学習日記</a></li>
-          <li><a href="works.html">制作実績</a></li>
-          <li><a href="contact.html">お問い合わせ</a></li>
+          <li><a href="/index.html"><span>ホーム</span></a></li>
+          <li><a href="/blog.html"><span>学習日記</span></a></li>
+          <li><a href="/works.html"><span>制作実績</span></a></li>
+          <li><a href="/contact.html"><span>お問い合わせ</span></a></li>
         </ul>
       </nav>
+    </div>
+  </header>
 
-      <p class="footer-copy">© 2025 QureaNote</p>
-    </footer>
+  <main>
+    <section class="hero">
+      <div class="hero-inner">
+        <h1 class="hero-title">お問い合わせ</h1>
+      </div>
+    </section>
+
+    <!-- お問い合わせフォーム本体 -->
+    <section class="contact">
+      <div class="contact-inner">
+        <p class="contact-lead">
+          お仕事のご相談やご質問などございましたら、下記フォームよりお気軽にご連絡ください。<br>
+          ※内容によっては返信いたしかねる場合があります。<br>
+          ※返信までには数日かかる場合があります。
+        </p>
+
+        <form id="contactForm" action="https://formspree.io/f/meoyvekq" method="post" class="contact-form">
+
+          <div class="form-field">
+            <label for="name">お名前</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+
+          <div class="form-field">
+            <label for="email">メールアドレス</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+
+          <div class="form-field">
+            <label for="message">お問い合わせ内容</label>
+            <textarea name="message" id="message" rows="6" required></textarea>
+          </div>
+
+          <div class="contact-submit-wrap">
+            <button type="submit" class="contact-submit">送信する</button>
+          </div>
+
+          <p class="contact-note">
+            ご入力いただいた内容は、お問い合わせへの回答のみに使用し、第三者へ提供することはありません。
+          </p>
+
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <nav class="footer-nav">
+      <ul>
+        <li><a href="/index.html">ホーム</a></li>
+        <li><a href="/blog.html">学習日記</a></li>
+        <li><a href="/works.html">制作実績</a></li>
+        <li><a href="/contact.html">お問い合わせ</a></li>
+      </ul>
+    </nav>
+
+    <p class="footer-copy">© 2025 QureaNote</p>
+  </footer>
 </body>
-
 </html>
-
